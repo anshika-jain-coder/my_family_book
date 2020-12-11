@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <h1>My family book</h1>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <img id="images" src="images.jpg">
+        <br>
+        <p id="name">My Family Book</p>
+        <br>
+        <button type="button" onclick="nextslide()">Next </button>
+        
+        <script>
+ var names=[
+  "My Family Book ",
+  "Mrs.Sanjeev Kumar Jain(Dad)",
+  "Anshika Jain(me)",
+  "Mrs.Rachna Jain (Mom)"
+];
+var image =["IMG_20201206_190403.jpg",
+       "IMG_20201206_190424.jpg",
+       "IMG_20201206_190439.jpg",
+      "images.jpg"];
+      
+  var i=0;
+  
+function nextslide(){
+    i++;var numbers=3;
+    if(i>numbers)
+    {
+        i=0;}
+var updatedimage= image[i];
+var updatednames=names[i];
+  document.getElementById("images").src=updatedimage;
+  document.getElementById("names").innerHTML=updatednames;}
+
+       
+      
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    text-align:center;
+    font-size:50px
+  }
+  button{
+    height:100px;
+    width:200px;
+    font-size:50px;
+  }
+  #photo{
+    height:900px
+  }
